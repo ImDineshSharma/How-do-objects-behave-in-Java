@@ -1,0 +1,35 @@
+// here i m creating two classes one is GoodDog and another is where is test this classe's code as GoodDogTestDrive
+
+class GoodDog {
+   int size;
+   String name;
+   
+   void bark() {
+     if ( size > 40 ) {
+       System.out.println(" Woof! Woof! " );
+   } else if ( size > 20 ) {
+       System.out.println(" Wiff! Wiff! " );
+   } else {
+       System.out.println(" Yip! Yip! " );
+   }
+  }
+}
+
+// Test Class
+
+class GoodDogTestDrive {
+   public static void main (String[] args) {
+     
+     GoodDog one = new GoodDog();
+     one.size = 10;
+     GoodDog two = new GoodDog();
+     two.size = 45;
+     GoodDog three = new GoodDog();
+     three.size = 30;
+     
+     one.bark();
+     two.bark();
+     three.bark();
+  }
+}
+// can you guess what would be the output?
