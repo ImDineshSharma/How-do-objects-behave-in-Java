@@ -1,4 +1,4 @@
-// here i m creating two classes one is GoodDog and another is where is test this classe's code as GoodDogTestDrive
+// here i m creating two classes one is GoodDog.java and another is where is test this classe's code as GoodDogTestDrive.java
 
 class GoodDog {
    int size;
