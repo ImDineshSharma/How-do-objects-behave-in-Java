@@ -1,0 +1,46 @@
+// The main reason we use encapsulation is to protect our instance variables or a piece of code from unknown
+// here is the small example of how we achieve that
+
+// GoodDog.java file
+
+class GoodDog {
+  private int size;
+  private String name;
+  
+  public int getSize() {
+    return size;
+  }
+  public void setSize ( int s ) {
+    size = s;
+  }
+  
+  void bark (){
+    if ( size > 40 ) {
+       System.out.println("Woof! Woof!");
+   }else if ( size > 20 ) {
+       System.out.println("Wiff! Wiff!");
+   }else {
+       System.out.println("Yip! Yip!");
+   }
+  }
+}
+
+// GooDogTestDrive.java file
+
+class GooDogTestDrive {
+   public static void main (String[] args) {
+  
+     GoodDog one = new GoodDog();
+     one.setSize(8);
+     GoodDog two = new GodDog();
+     two.setSize(41);
+     
+     System.out.println(" Dog one: " + one.getSize());
+     System.out.println(" Dog two: " + two.getSize());
+     
+     one.bark();
+     two.bark();
+  }
+}
+
+// As demonstrated above if someone wants any changes to the "size" he/she must go through get and set method, this is how it works
